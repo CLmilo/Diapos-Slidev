@@ -80,7 +80,7 @@ h1 {
     .chart-wrap {
         --chart-width:420px;
         --grid-color:#aaa;
-        --bar-color:#F16335;
+        --bar-color:#2B90B6;
         --bar-thickness:40px;
         --bar-rounded: 3px;
         --bar-spacing:10px;
@@ -150,6 +150,75 @@ h1 {
         white-space:nowrap;
     }
 </style>
+
+---
+layout: two-cols
+---
+
+# Vulnerabilidades en General
+
+### Vulnerabilidad por versión desactualizada
+
+- Lame
+- Blue
+- Optimum
+- Blunder
+
+### Vulnerabilidad por mala configuración
+
+- Doctor
+- Devel
+
+::right::
+
+<div class="grafico">
+     <div class="sombra"></div>
+     <div id="porcion1" class="recorte">
+        <div class="quesito" data-rel="70"></div>
+     </div>
+</div>
+<style>
+  .recorte {
+    border-radius: 50%;
+    clip: rect(0px, 200px, 200px, 100px);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+.quesito {
+    border-radius: 50%;
+    clip: rect(0px, 100px, 200px, 0px);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+#porcion1 {
+    transform: rotate(0deg);
+  }
+#porcion1 .quesito {
+    background-color: rgba(0,0,255,.7);
+    transform: rotate(90deg);
+ }
+   * {
+    box-sizing: border-box;    
+  }
+.grafico {
+    height: 200px;
+    margin: 1rem auto;
+    position: relative;
+    width: 200px;
+  }
+.sombra {
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.3);
+    border: 5px solid #000;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+</style>
+
 
 
 ---
