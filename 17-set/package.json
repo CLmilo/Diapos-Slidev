@@ -10,5 +10,8 @@
     "@slidev/theme-default": "*",
     "@slidev/theme-seriph": "*"
   },
-  "name": "17-set"
+  "name": "17-set",
+  "devDependencies": {
+    "@iconify/ember": "^1.0.0-beta.3"
+  }
 }
