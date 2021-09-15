@@ -1,26 +1,28 @@
-\documentclass[11pt]{article}
-\usepackage{setspace}
-\usepackage{graphicx}
-\usepackage{lipsum}
-\usepackage{hyperref}
-\usepackage{blindtext}
-\usepackage{makeidx}
-\usepackage[a4paper, total={6in, 8in}]{geometry}
-\usepackage{parskip}
+\documentclass[11pt]{article}  % esto siempre debe ir 
+\usepackage{setspace} %
+\usepackage{graphicx} % incluir imágenes
+\usepackage{lipsum} % para usar lorem ipsum
+\usepackage[hidelinks]{hyperref} % crear hipervínculos
+\usepackage{blindtext} % no sé 
+\usepackage{makeidx} % no sé 
+\usepackage[a4paper, total={6in, 8in}]{geometry} % es para definir cómo va el texto
+\usepackage{parskip} % evitar auto indentado
 \begin{document}
 	\onehalfspacing 	% Interlineado 1.5
 	\noindent			% Sin sangría
 
 	\include{1_0_CARATULA/Caratula}
 	
-	\singlespacing 
-	\renewcommand\contentsname{\centering ÍNDICE }	
-	\onehalfspacing
-	
+	\tableofcontents
+	\clearpage
 
-	\section*{Resumen}
+	\section{Resumen}
 
 	\lipsum
 	
+	\clearpage
+
 	
+
+
 \end{document}
