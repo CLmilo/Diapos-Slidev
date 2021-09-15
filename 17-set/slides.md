@@ -51,7 +51,9 @@ The last comment block of each slide will be treated as slide notes. It will be 
 
 <div class="pt-5">
   <span class="px-2 py-1 rounded cursor-pointer">
-    <mdi:application class="inline"/> &nbsp;&nbsp;Puerto 445 - SMB  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<mdi:application class="inline"/> &nbsp;&nbsp;Puerto 80 - HTTP &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<mdi:application class="inline"/> &nbsp;&nbsp;Puerto 21 - FTP 
+    <span id="puerto1"><mdi:application class="inline"/> &nbsp;&nbsp;Puerto 445 - SMB </span>
+    <span id="puerto2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<mdi:application class="inline"/> &nbsp;&nbsp;Puerto 80 - HTTP</span>
+    <span id="puerto3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<mdi:application class="inline"/> &nbsp;&nbsp;Puerto 21 - FTP </span>
   </span>
 </div>
 <br><br>
@@ -59,13 +61,22 @@ The last comment block of each slide will be treated as slide notes. It will be 
 <div class="chart-wrap">
   <div class="grid horizontal">
   <div class="bar" style="--bar-value:33%;" data-name="Puerto 445"></div>
-        <div class="bar" style="--bar-value:33%;" data-name="Puerto 80"></div>
-       <div class="bar" style="--bar-value:16%;" data-name="Puerto 21"></div>
-        <div class="bar" style="--bar-value:16%;" data-name="Otros"></div>
+        <div class="bar" style="--bar-value:33%;--bar-color:#FFCC80" data-name="Puerto 80"></div>
+       <div class="bar" style="--bar-value:16%;--bar-color:#9B59B6" data-name="Puerto 21"></div>
+        <div class="bar" style="--bar-value:16%;--bar-color:#DC7633" data-name="Otros"></div>
 
   </div>
 </div>
 <style>
+#puerto1 {
+  color: #2B90B6; 
+}
+#puerto2{
+  color: #FFCC80;
+}
+#puerto3{
+  color:#9B59B6;
+}
 h1 {
   background-color: #2B90B6;
   background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 50%);
@@ -174,13 +185,36 @@ layout: two-cols
 <br>
 <br>
 <br>
+<br>
+<br>
 <div class="grafico">
      <div class="sombra"></div>
-     <div id="porcion1" class="recorte"><div class="quesito" data-rel="70"></div></div>
-     <div id="porcion2" class="recorte"><div class="quesito" data-rel="120"></div></div>
-     <div id="porcion3" class="recorte"><div class="quesito" data-rel="25"></div></div>
-     <div id="porcionFin" class="recorte"><div class="quesito" data-rel="145"></div></div>
+     <div id="porcion1" class="recorte"><div class="quesito" data-rel="35,5%"></div></div>
+     <div id="porcion2" class="recorte"><div class="quesito" data-rel="62,5%"></div></div>
+     <div id="porcion3" class="recorte"><div class="quesito" data-rel="120"></div></div>
 </div>
+<span id="desact">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<mdi:application class="inline"/> &nbsp;&nbsp;Desactualizada </span>
+<span id="conf">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<mdi:application class="inline"/> &nbsp;&nbsp;Configuración </span>
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 50%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+h3{
+  background-color: #7D3C98;
+  background-image: linear-gradient(45deg, ##7D3C98 10%, #146b8c 50%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+</style>
 <style>
   * {
     box-sizing: border-box;    
@@ -220,58 +254,38 @@ layout: two-cols
     transform: rotate(0deg);
      }
 #porcion1 .quesito {
-    background-color: rgba(0,0,255,.7);
-    transform: rotate(70deg);
+    background-color: rgba(26, 188, 156,.7);
+    transform: rotate(135deg);
      }
 #porcion2 {
-    transform: rotate(70deg);
+    transform: rotate(135deg);
      }
 #porcion2 .quesito {
-    background-color: rgba(255,255,0,.7);
-    transform: rotate(120deg);
-     }
-#porcion3 {
-    transform: rotate(-170deg);
-     }
-#porcion3 .quesito {
-    background-color: rgba(0,128,0,.7);
-    transform: rotate(25deg);
-     }
-#porcionFin {
-    transform:rotate(-145deg);
-     }
-#porcionFin .quesito {
-    background-color: rgba(255,0,0,.7);
-    transform: rotate(145deg);
+    background-color: rgba(125, 60, 152,.7);
+    transform: rotate(180deg);
      }
 #porcion1 .quesito:after {
     content: attr(data-rel);
-    left: 25%;
+    left: 10%;
     line-height: 5;
     position: absolute;
-    top: 0;
-    transform: rotate(-70deg);
+    top: 5%;
+    transform: rotate(225deg);
 }
 #porcion2 .quesito:after {
     content: attr(data-rel);
     left: 15%;
     position: absolute;
     top: 30%;
-    transform: rotate(-190deg);
+    transform: rotate(45deg);
 }
-#porcion3 .quesito:after {
-    content: attr(data-rel);
-    left: 35%;
-    position: absolute;
-    top: 4%;
-    transform: rotate(70deg);
-}
-#porcionFin .quesito:after {
-   content: attr(data-rel);
-   left: 10%;
-   position: absolute;
-   top: 30%;
-}
+#porcion3 {
+    transform: rotate(-45deg);
+     }
+#porcion3 .quesito {
+    background-color: rgba(125, 60, 152,.7);
+    transform: rotate(45deg);
+     }
   </style>
 
 
