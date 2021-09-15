@@ -291,6 +291,69 @@ h3{
 
 ---
 
+
+# Credenciales Encontradas
+
+> *Durante la auditoría se encontraron credenciales por medio de diferentes fuentes.*
+
+| LSA_SAM | Brute Force | Hash | Plaintext |
+| :---: | :---: | :---: | :---: |
+| ![imagen_1](https://d500.epimg.net/cincodias/imagenes/2019/08/26/lifestyle/1566818317_265854_1566818366_noticia_normal_recorte1.jpg) | ![imagen_2](https://i2.wp.com/comandoit.com/wp-content/uploads/2020/05/jhon.png?zoom=2&resize=405%2C400&ssl=1) | ![imagen_3](https://media.kasperskydaily.com/wp-content/uploads/sites/87/2014/04/05212201/hash.jpg)  | ![imagen_4](https://www.zdnet.com/a/hub/i/r/2016/08/24/df60f615-917f-4721-b061-6a034aad846c/resize/770xauto/168039de9712e1f518f2595d5c9f7607/hacker-keyboard.jpg) |
+
+
+### Consecuencias
+
+1. Las credenciales LSA_SAM suponen un ingreso al sistema *sin la necesidad de tener una contraseña*.
+2. Las credenciales por medio de fuerza bruta dan a entender que las contraseñas usadas son  muy *comunes* y por ende previsible por terceros.
+3. Con hashes solo se encesitaría tiempo para descubrir sus *secretos*.
+4. El texto plano es el mayor riesgo y error que pueda tener un servidor, es una *puerta de libre ingreso* a una cuenta.
+
+
+
+<style>
+img[alt=imagen_1] { width: 150px; height: 100px; border-radius: 5px 20px 5px; margin: 2px; padding: 2px; display: inline;} 
+img[alt=imagen_2] { width: 150px; height: 100px; border-radius: 5px 20px 5px; margin: 2px; padding: 2px; display: inline;} 
+img[alt=imagen_3] { width: 150px; height: 100px; border-radius: 5px 20px 5px; margin: 2px; padding: 2px; display: inline;} 
+img[alt=imagen_4] { width: 150px; height: 100px; border-radius: 5px 20px 5px; margin: 2px; padding: 2px; display: inline;} 
+</style>
+
+
+---
+
+# Credenciales por registro LSA_SAM
+<div grid="~ cols-2 gap-4" >
+<div style="margin-top: 40px;">
+
+- Usuario: *Administrator*
+  - Riesgo: <span style="color:red;">Alto.</span>
+  - Descripción: Acceso como usuario privilegiado, **control total del servidor**.
+- Usuario: *haris*
+  - Riesgo: <span style="color:green;">Bajo.</span>
+  - Descripción:
+- Usuario: *blue*
+  - Riesgo: <span style="color:green;">Bajo.</span>
+  - Descripción: 
+</div>
+<div>
+  <img src="images/blue_sam.PNG" style="margin-top: 60px;">
+
+</div>
+</div>
+
+---
+
+# Credenciales por medio de fuerza bruta
+
+---
+
+# Credenciales por medio de Hashes
+
+---
+
+# Credenciales en texto plano
+
+---
+
 # What is Slidev?
 
 Slidev is a slides maker and presenter designed for developers, consist of the following features
