@@ -169,7 +169,7 @@ preload: false
 
 # Vulnerabilidades en General
 
-### Vulnerabilidad por versión
+### Vulnerabilidad por versión Desactualizada
 
 - Blue
 - Blunder
@@ -185,30 +185,22 @@ preload: false
       :initial="{ x: 800, y: -100, scale: 1.5, rotate: -50 }"
       :enter="final"
       class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-square.png"
+      src="images/CiberSecFIIS.png"
     />
     <img
       v-motion
       :initial="{ y: 500, x: -100, scale: 2 }"
       :enter="final"
       class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-circle.png"
+      src="images/CiberSecFIIS.png"
     />
     <img
       v-motion
       :initial="{ x: 600, y: 400, scale: 2, rotate: 100 }"
       :enter="final"
       class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-triangle.png"
+      src="images/CiberSecFIIS.png"
     />
-  </div>
-
-  <div 
-    class="text-5xl absolute top-14 left-40 text-[#2B90B6] -z-1"
-    v-motion
-    :initial="{ x: -80, opacity: 0}"
-    :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
-    Slidev
   </div>
 </div>
 
@@ -228,14 +220,6 @@ const final = {
 }
 </script>
 
-<div
-  v-motion
-  :initial="{ x:35, y: 40, opacity: 0}"
-  :enter="{ y: 0, opacity: 1, transition: { delay: 3500 } }">
-
-[Learn More](https://sli.dev/guide/animations.html#motion)
-
-</div>
 
 ::right::
 <br><br><br>
@@ -246,8 +230,12 @@ const final = {
      <div id="porcion2" class="recorte"><div class="quesito" data-rel="62,5%"></div></div>
      <div id="porcion3" class="recorte"><div class="quesito" data-rel="120"></div></div>
 </div>
+
+<div>
 <span id="desact">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<mdi:application class="inline"/> &nbsp;&nbsp;Desactualizada </span>
+<br>
 <span id="conf">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<mdi:application class="inline"/> &nbsp;&nbsp;Configuración </span>
+</div>
 <style>
 #desact{
   color:rgba(125, 60, 152,.7);
