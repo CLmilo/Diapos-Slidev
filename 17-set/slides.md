@@ -499,11 +499,36 @@ img[alt=imagen_4] { width: 150px; height: 100px; border-radius: 5px 20px 5px; ma
 
 ---
 
-# Credenciales en texto plano
+# Maquina Blue
 
-> Acá faltan pruebas >:v, solo encontré en doctors esto xd
+
+<div align="center"><img src="images/bluebanner.png"></div>
 
 ---
+
+
+<div grid="~ cols-2 gap-4" >
+
+<div style="margin-top: 40px;">
+
+## Vulnerabilidades encontradas
+
+- Vulnerabilidad de ejecución remota de código en Windows SMB
+
+## Exploit usado
+
+- MS17-010 EternalBlue SMB Remote Windows Kernel Pool Corruption 
+  
+</div>
+<div>
+  <img src="images/nmap.png" style="margin-top: 3px;">
+  <img src="images/blue.png" style="margin-top: 12px;">
+
+</div>
+</div>
+
+---
+
 
 # What is Slidev?
 
