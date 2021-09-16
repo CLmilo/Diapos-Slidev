@@ -429,7 +429,7 @@ img[alt=imagen_4] { width: 150px; height: 100px; border-radius: 5px 20px 5px; ma
   - Descripción: Acceso como usuario privilegiado, **control total del servidor**.
 - Usuario: *haris*
   - Riesgo: <span style="color:green;">Bajo.</span>
-  - Descripción:
+  - Descripción: 
 - Usuario: *blue*
   - Riesgo: <span style="color:green;">Bajo.</span>
   - Descripción: 
@@ -442,15 +442,66 @@ img[alt=imagen_4] { width: 150px; height: 100px; border-radius: 5px 20px 5px; ma
 
 ---
 
+<div grid="~ cols-2 gap-4" >
+<div style="margin-top: 40px;">
+
+- Usuario: *Administrator*
+  - Riesgo: <span style="color:red;">Alto.</span>
+  - Descripción: Acceso como usuario privilegiado, **control total del servidor**.
+- Usuario: *babis*
+  - Riesgo: <span style="color:green;">Bajo.</span>
+  - Descripción:
+</div>
+<div>
+  <img src="images/devel_sam.PNG" style="margin-top: 60px;">
+
+</div>
+</div>
+
+---
+
 # Credenciales por medio de fuerza bruta
+<div grid="~ cols-2 gap-4" >
+<div style="margin-top: 40px;">
+
+- Usuario: *fergus*
+  - Riesgo: <span style="color:orange;">Medio.</span>
+  - Descripción: Acceso como administrador del servidor web, puede implicar **interrupciones** en el funcionamiento del servicio web, atentar contra la **confidencialidad** y la **integridad** del servicio.
+
+</div>
+<div>
+  <img src="images/blunder_brute-force.PNG" style="margin-top: 20px;">
+
+</div>
+</div>
+
 
 ---
 
 # Credenciales por medio de Hashes
+<div grid="~ cols-2 gap-4" >
+<div style="margin-top: 40px;">
+
+- Usuario: *Administrator*
+  - Riesgo: <span style="color:red;">Alto.</span>
+  - Descripción: No se encontró un diccionario en concreto para romper este hash.
+- Usuario: *Hugo*
+  - Riesgo: <span style="color:orange;">Medio.</span>
+  - Descripción: Dicho usuario poseía las mismas credenciales en la máquina local y en otro servicio lo cual facilitó la intrusión, **aumento de privilegios en el sistema**. 
+</div>
+<div>
+  <img src="images/blunder_hash_1.PNG" style="margin-top: 60px;">
+  <img src="images/blunder_hash_2.PNG" style="margin-top: 40px;">
+
+</div>
+</div>
+
 
 ---
 
 # Credenciales en texto plano
+
+> Acá faltan pruebas >:v, solo encontré en doctors esto xd
 
 ---
 
