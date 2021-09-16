@@ -47,6 +47,59 @@ The last comment block of each slide will be treated as slide notes. It will be 
 
 ---
 
+# Alcance 
+
+El alcance comprende las siguiente máquinas de la Plataforma HackTheBox
+
+| **Máquina** | **Sistema Operativo** | **Dificultad** | **Dirección IP** |
+|:-------:|-------------------|------------|--------------|
+| Blue    | Microsoft Windows | Fácil      | 10.10.10.40  |
+| Blunder | Linux             | fácil      | 10.10.10.191 |
+| Devel   | Microsoft Windows | Medio      | 10.10.10.5   |
+
+
+Considerando la matriz MITRE & ATT&CK
+
+<div class="w-60 relative mt-6">
+  <div class="relative w-40 h-40">
+    <img
+      v-motion
+      :initial="{ x: 800, y: -200, scale: 2.5, rotate: -50 }"
+      :enter="final"
+      class="absolute top-0 left-0 right-0 bottom-0"
+      src="images/mitre.png"
+    />
+  </div>  
+</div>
+
+<script setup lang="ts">
+const final = {
+  x: 50,
+  y: 40,
+  rotate: 0,
+  scale: 1.5,
+  transition: {
+    type: 'spring',
+    damping: 10,
+    stiffness: 20,
+    mass: 2
+  }
+}
+</script>
+<style>
+  h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 50%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+  </style>
+
+---
+
 # Puertos y Servicios más vulnerables
 
 <div class="pt-5">
@@ -241,7 +294,7 @@ const final = {
   color:rgba(125, 60, 152,.7);
 }
 #conf{
-  color:rgba(26, 188, 156,.7);
+  color:rgba(33, 97, 140,.7);
 }
 h1 {
   background-color: #2B90B6;
@@ -253,7 +306,7 @@ h1 {
   -moz-text-fill-color: transparent;
 }
 h3{
-  background-color: #7D3C98;
+  background-color: #21618C;
   background-image: linear-gradient(45deg, ##7D3C98 10%, #146b8c 50%);
   background-size: 100%;
   -webkit-background-clip: text;
@@ -301,7 +354,7 @@ h3{
     transform: rotate(0deg);
      }
 #porcion1 .quesito {
-    background-color: rgba(26, 188, 156,.7);
+    background-color: rgba(33, 97, 140,.7);
     transform: rotate(135deg);
      }
 #porcion2 {
