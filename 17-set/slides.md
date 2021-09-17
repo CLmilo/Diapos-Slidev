@@ -529,43 +529,41 @@ img[alt=imagen_4] { width: 150px; height: 100px; border-radius: 5px 20px 5px; ma
 </div>
 
 ---
-layout: section
----
 
-# Lorem ipsum dolor sit 
-
-::right::
-
-## Dolore magna
-
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-
-## Dolore magna
-
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-
----
 
 # Hardening
+
+<style>
+h3 {
+  font-size: 1em;
+}
+h4 {
+  font-size: 0.7em;
+}
+</style>
 
 
 <div grid="~ cols-2 gap-4" >
 
-<div style="margin-top: 10px;">
+<div style="margin-top: 5px;">
 
-Instalar el parche de seguridad MS17-010
+<h3>Instalar el parche de seguridad MS17-010</h3>
 
-- El procedimiento por seguir para realizar la actualización será:
-  1. Ingresar en Windows Update en la máquina por actualizar.
-  2. Identificar e instalar el archivo Windows6.1-KB4012215-x64.msu. 
-    
+<h4>- El procedimiento por seguir para realizar la actualización será:</h4>
+<h4>  1. Ingresar en Windows Update en la máquina por actualizar.</h4>
+<h4>  2. Identificar e instalar el archivo Windows6.1-KB4012215-x64.msu.</h4>  
+  
+<br>
+<br>
       
-Deshabilitar el servicio smbv1 en la máquina
+<h3>Deshabilitar el servicio SMBv1 en la máquina</h3>
 
-- El procedimiento por seguir para realizar esto es:
-  1. Ingresar a una terminal PowerShell en el computador con esta
-vulnerabilidad.
-  2. Ingresar el siguiente comando: 
+<h4>- Podemos hacerlo de dos formas:</h4>
+<h4>  1. Deshabilitando smb1 desde funciones y caracteristicas de windows</h4>
+<h4>  2. Ingresar el siguiente comando en powershell que modifica el registro: </h4>
+
+<br>
+
 ```ts
 Set-ItemProperty -Path
 "HKLM:\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters" SMB1 -Type DWORD
