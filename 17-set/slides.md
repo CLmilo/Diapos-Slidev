@@ -511,11 +511,12 @@ img[alt=imagen_4] { width: 150px; height: 100px; border-radius: 5px 20px 5px; ma
 
 <div style="margin-top: 40px;">
 
-## Vulnerabilidades encontradas
+### Vulnerabilidades encontradas
 
-- Vulnerabilidad de ejecución remota de código en Windows SMB
-
-## Exploit usado
+- Vulnerabilidad de ejecución remota de código en Windows SMB  
+    
+      
+### Exploit usado
 
 - MS17-010 EternalBlue SMB Remote Windows Kernel Pool Corruption 
   
@@ -528,7 +529,62 @@ img[alt=imagen_4] { width: 150px; height: 100px; border-radius: 5px 20px 5px; ma
 </div>
 
 ---
+layout: section
+---
 
+# Lorem ipsum dolor sit 
+
+::right::
+
+## Dolore magna
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+
+## Dolore magna
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+
+---
+
+# Hardening
+
+
+<div grid="~ cols-2 gap-4" >
+
+<div style="margin-top: 10px;">
+
+Instalar el parche de seguridad MS17-010
+
+- El procedimiento por seguir para realizar la actualización será:
+  1. Ingresar en Windows Update en la máquina por actualizar.
+  2. Identificar e instalar el archivo Windows6.1-KB4012215-x64.msu. 
+    
+      
+Deshabilitar el servicio smbv1 en la máquina
+
+- El procedimiento por seguir para realizar esto es:
+  1. Ingresar a una terminal PowerShell en el computador con esta
+vulnerabilidad.
+  2. Ingresar el siguiente comando: 
+```ts
+Set-ItemProperty -Path
+"HKLM:\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters" SMB1 -Type DWORD
+-Value 0 -Force
+
+```
+   
+  
+</div>
+<div>
+  <img src="images/hard.png" style="margin-top: 3px;">
+  <img src="images/kb.png" style="margin-top: 15px;">
+  <img src="images/regedit.jpg" style="margin-top: 25px;">
+
+</div>
+</div>
+
+
+---
 
 # What is Slidev?
 
