@@ -584,6 +584,120 @@ Set-ItemProperty -Path
 
 ---
 
+# Máquina Blunder
+
+<div align="center"><img src="images/blunderbanner.png"></div>
+
+<style>
+img {
+  height: 400px;
+  width: 550px;
+}
+</style>
+
+---
+
+<div grid="~ cols-2 gap-4" >
+
+<div style="margin-top: 10px;">
+
+### Vulnerabilidades encontradas
+
+- Vulnerabilidad web que permitía el uso de fuerza bruta para autenticarse en el sistema.
+- Vulnerabilidad web que permitía la carga de archivos maliciosos.  
+- Vulnerabilidad que permite bypass en el sistema y obtener sesión como usuario privilegiado.
+      
+### CVE asociado
+
+- CVE-2019-17240
+- CVE-2019-16113
+- CVE-2019-14287
+
+
+> https://github.com/noroh4xy/CVE-2019-16113 
+> https://www.exploit-db.com/exploits/47502
+
+<style>
+
+ blockquote {
+   margin-top: 90px;
+ }
+
+</style>
+
+
+  
+</div>
+<div>
+  
+  ### Pruebas 
+
+  <img src="images/blunder_cve_01.PNG" style="margin-top: 10px;">
+  <img src="images/blunder_cve_03.PNG" style="margin-top: 10px;">
+  <img src="images/blunder_cve_02.PNG" style="margin-top: 10px;">
+  <img src="images/blunder_cve_04.PNG" style="margin-top: 10px;">
+
+</div>
+</div>
+
+---
+
+# Máquina Devel
+
+<div align="center"><img src="images/develbanner.png"></div>
+
+<style>
+img {
+  height: 400px;
+  width: 550px;
+}
+</style>
+
+---
+
+<div grid="~ cols-2 gap-4" >
+
+<div style="margin-top: 10px;">
+
+### Vulnerabilidades encontradas
+
+- El servidor ftp compartía el directorio donde se ejecutaba el servicio web lo que permitía la carga de archivos maliciosos.
+- Vulnerabilidad a nivel de kernel que permitía el escalamiento de privilegios.
+      
+### CVE asociado
+
+- CVE-2010-0232
+
+> https://www.exploit-db.com/exploits/11199
+
+</div>
+
+<div>
+  
+  ### Pruebas 
+
+  <img src="images/devel_poc_01.PNG" style="margin-top: 10px;">
+  <img src="images/devel_poc_03.PNG" style="margin-top: 40px;">
+  <img src="images/devel_poc_02.PNG" style="margin-top: 40px;">
+  
+
+</div>
+
+</div>
+
+
+
+<style>
+
+ blockquote {
+   margin-top: 160px;
+ }
+
+</style>
+
+
+---
+
 # What is Slidev?
 
 Slidev is a slides maker and presenter designed for developers, consist of the following features
