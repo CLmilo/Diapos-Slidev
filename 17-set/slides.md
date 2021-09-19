@@ -79,11 +79,6 @@ The last comment block of each slide will be treated as slide notes. It will be 
 
 </div>
 
-
-
-
-
-
 </div>
 
 <style>
@@ -93,14 +88,17 @@ img {
   padding-left: 60px;
 
 }
+  h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 50%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
 
 </style>
-
-
-
-
-
-
 
 ---
 
