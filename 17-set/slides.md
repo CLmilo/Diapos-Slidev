@@ -89,7 +89,7 @@ MITRE ATT&CK® es una fuente de conocimiento mundial accesible basada en táctic
   <div class="relative w-40 h-40">
     <img
       v-motion
-      :initial="{ x: 800, y: -200, scale: 2.5, rotate: -50 }"
+      :initial="{ x: 900, y: -200, scale: 2.5, rotate: -50 }"
       :enter="final"
       class="absolute top-0 left-0 right-0 bottom-0"
       src="images/mitre.png"
@@ -99,8 +99,8 @@ MITRE ATT&CK® es una fuente de conocimiento mundial accesible basada en táctic
 
 <script setup lang="ts">
 const final = {
-  x: 50,
-  y: 40,
+  x: 350,
+  y: 10,
   rotate: 0,
   scale: 1.5,
   transition: {
@@ -768,8 +768,6 @@ h1 {
 
 
 [CVE-2019-16113](https://github.com/noroh4xy/CVE-2019-16113)
-
-
 
 [exploits/47502](https://www.exploit-db.com/exploits/47502)
 
