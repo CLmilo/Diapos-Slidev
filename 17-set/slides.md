@@ -195,10 +195,9 @@ const final = {
 <div id= "columnas">
 <div class="chart-wrap">
   <div class="grid horizontal">
-  <div class="bar" style="--bar-value:33%;" data-name="Puerto 445"></div>
-        <div class="bar" style="--bar-value:33%;--bar-color:#FFCC80" data-name="Puerto 80"></div>
-       <div class="bar" style="--bar-value:16%;--bar-color:#9B59B6" data-name="Puerto 21"></div>
-        <div class="bar" style="--bar-value:16%;--bar-color:#DC7633" data-name="Otros"></div>
+  <div class="bar" style="--bar-value:25%;" data-name="Puerto 445"></div>
+        <div class="bar" style="--bar-value:50%;--bar-color:#FFCC80" data-name="Puerto 80"></div>
+        <div class="bar" style="--bar-value:25%;--bar-color:#9B59B6" data-name="Puerto 21"></div>
   </div>
 </div>
 <img src="images/apache_large.png">
@@ -880,9 +879,31 @@ sudo apt-get update && sudo apt-get upgrade
 
 ### Actualización de Bludit
 Utiizando el repositorio de github
-> https://github.com/philippdormann/bludit-auto-update
 
-<img src="images/blunder_hardening_02.PNG" style="margin-top: 10px; height:75px; width:800px;">
+https://github.com/philippdormann/bludit-auto-update
+
+<img src="images/blunder_hardening_02.PNG" style="margin-top: 10px; height:85px; width:800px;">
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 50%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+h3 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 50%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+  </style>
 
 ---
 
@@ -890,7 +911,7 @@ Utiizando el repositorio de github
 
 Esta técnica implica modificar el archivo **sudoers.true** añadiendo las lineas:
 
-```bash
+```python
 Runas_alias MYGROUP= root, hugo
 hugo  ALL=(MYGROUP, !root) /bin/bash
 ```
@@ -904,6 +925,18 @@ hugo  ALL=(MYGROUP, !root) /bin/bash
 <img src="images/blunder_hardening_04.PNG" style="margin-top: 45px;">
 </div>
 </div>
+
+<style>
+  h2 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 50%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+  </style>
 
 ---
 
@@ -983,4 +1016,24 @@ h3 {
 }
 </style>
 
+---
+
+# Hardening
+Deshabilitar ftp anónimo y habilitar una autenticación básica
+
+Deshabilitar la autenticación anónima
+```
+Set-WebConfigurationProperty -pspath 'MACHINE/WEBROOT/APPHOST'  
+-filter "system.applicationHost/sites/site[@name='Default FTP Site']
+/ftpServer/security/authentication/anonymousAuthentication" 
+-name "enabled" -value "False"
+```
+Habilitar la autenticación básica
+```
+Set-WebConfigurationProperty -pspath 'MACHINE/WEBROOT/APPHOST'  
+-filter "system.applicationHost/sites/site[@name='Default FTP Site']
+/ftpServer/security/authentication/basicAuthentication" -name "enabled" 
+-value "True"
+```
+Actualizar a una version más nueva del sistema operativo, que cuente con soporte y estar al día con los parches. El SO actual es Windows 7 Build 7600 además que no cuenta con el soporte de Microsoft desde el 14 de enero del 2020.
 
