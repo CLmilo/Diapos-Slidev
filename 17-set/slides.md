@@ -57,6 +57,9 @@ El alcance comprende las siguiente máquinas de la Plataforma HackTheBox
 | Blunder | Linux             | fácil      | 10.10.10.191 |
 | Devel   | Microsoft Windows | Medio      | 10.10.10.5   |
 
+<br>
+&nbsp&nbsp&nbsp&nbsp
+<img src="images/logohtb.png">
 
 <style>
   h1 {
@@ -962,16 +965,17 @@ h3 {
 ---
 
 # Hardening
-Deshabilitar ftp anónimo y habilitar una autenticación básica
 
-Deshabilitar la autenticación anónima
+<br>
+
+Deshabilitar la autenticación FTP anónima
 ```
 Set-WebConfigurationProperty -pspath 'MACHINE/WEBROOT/APPHOST'  
 -filter "system.applicationHost/sites/site[@name='Default FTP Site']
 /ftpServer/security/authentication/anonymousAuthentication" 
 -name "enabled" -value "False"
 ```
-Habilitar la autenticación básica
+Habilitar la autenticación FTP básica
 ```
 Set-WebConfigurationProperty -pspath 'MACHINE/WEBROOT/APPHOST'  
 -filter "system.applicationHost/sites/site[@name='Default FTP Site']
@@ -980,3 +984,14 @@ Set-WebConfigurationProperty -pspath 'MACHINE/WEBROOT/APPHOST'
 ```
 Actualizar a una version más nueva del sistema operativo, que cuente con soporte y estar al día con los parches. El SO actual es Windows 7 Build 7600 además que no cuenta con el soporte de Microsoft desde el 14 de enero del 2020.
 
+<style>
+  h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 50%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+  </style>
