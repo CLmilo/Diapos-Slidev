@@ -47,6 +47,63 @@ The last comment block of each slide will be treated as slide notes. It will be 
 
 ---
 
+#   Participantes
+
+<div grid="~ cols-2 gap-4" >
+<div style="align-content:center;">
+
+### Jesús Lujan
+
+![Jesus](https://www.hackthebox.eu/badge/image/274780)
+
+### Joseph Mototocache
+
+![Joseph](https://www.hackthebox.eu/badge/image/424328)
+
+
+
+### Chi Jon Lau Ma
+
+![Lau](https://www.hackthebox.eu/badge/image/646612)
+
+</div>
+<div style="align-content:center;">
+
+### Juan Mora
+
+![Lau](https://www.hackthebox.eu/badge/image/124595)
+
+### Luis Suarez
+
+![Luis](https://www.hackthebox.eu/badge/image/178451)
+
+</div>
+
+
+
+
+
+
+</div>
+
+<style>
+
+img {
+
+  padding-left: 60px;
+
+}
+
+</style>
+
+
+
+
+
+
+
+---
+
 # Alcance 
 
 El alcance comprende las siguiente máquinas de la Plataforma HackTheBox
