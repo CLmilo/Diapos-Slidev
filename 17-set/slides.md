@@ -484,10 +484,10 @@ h3 {
   - Descripción: Acceso como usuario privilegiado, **control total del servidor**.
 - Usuario: *haris*
   - Riesgo: <span style="color:green;">Bajo.</span>
-  - Descripción: 
+  - Descripción: Usuario común.
 - Usuario: *blue*
   - Riesgo: <span style="color:green;">Bajo.</span>
-  - Descripción: 
+  - Descripción: Usuario común.
 </div>
 <div>
   <img src="images/blue_sam.PNG" style="margin-top: 60px;">
@@ -517,7 +517,7 @@ h3 {
   - Descripción: Acceso como usuario privilegiado, **control total del servidor**.
 - Usuario: *babis*
   - Riesgo: <span style="color:green;">Bajo.</span>
-  - Descripción:
+  - Descripción: Usuario Común.
 </div>
 <div>
   <img src="images/devel_sam.PNG" style="margin-top: 60px;">
@@ -807,6 +807,46 @@ h3 {
   <br>
   <img src="images/blunder_cve_04.PNG" style="margin-top: 10px;">
 
+</div>
+</div>
+
+---
+
+# Hardening
+
+### Actualización del sudo
+Utiizando el comando
+
+```bash
+sudo apt-get update && sudo apt-get upgrade
+```
+<img src="images/blunder_hardening.PNG" style="margin-top: 10px; height:75px; width:800px;">
+
+
+### Actualización de Bludit
+Utiizando el repositorio de github
+> https://github.com/philippdormann/bludit-auto-update
+
+<img src="images/blunder_hardening_02.PNG" style="margin-top: 10px; height:75px; width:800px;">
+
+---
+
+## Evitar el escalamiento de privilegios sin credenciales
+
+Esta técnica implica modificar el archivo **sudoers.true** añadiendo las lineas:
+
+```bash
+Runas_alias MYGROUP= root, hugo
+hugo  ALL=(MYGROUP, !root) /bin/bash
+```
+
+<div grid="~ cols-2 gap-4" >
+
+<div>
+<img src="images/blunder_hardening_03.PNG" style="margin-top: 10px;">
+</div>
+<div>
+<img src="images/blunder_hardening_04.PNG" style="margin-top: 45px;">
 </div>
 </div>
 
