@@ -3,7 +3,7 @@
 theme: seriph
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: https://source.unsplash.com/collection/94734566/1920x1080
+background: images/fondo.jpg
 # apply any windi css classes to the current slide
 class: 'text-center'
 # https://sli.dev/custom/highlighters.html
@@ -21,9 +21,9 @@ drawings:
   persist: false
 ---
 
-# Welcome to Slidev
+# Informe de Análisis de Vulnerabilidades
 
-Presentation slides for developers
+Análisis encontrados por el grupo **CiberSecFIIS** a las máquinas de **HTB**
 
 <div class="pt-12">
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
@@ -58,7 +58,32 @@ El alcance comprende las siguiente máquinas de la Plataforma HackTheBox
 | Devel   | Microsoft Windows | Medio      | 10.10.10.5   |
 
 
-Considerando la matriz MITRE & ATT&CK
+<style>
+  h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 50%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+
+</style>
+
+---
+
+# Matriz MITRE & ATT&CK
+
+MITRE ATT&CK® es una fuente de conocimiento mundial accesible basada en tácticas y técnicas de ataques reales observados alrededor del mundo
+<br>
+
+| **Tipo de vulnerabilidad** | **Blue** | **Blunder** | **Devel** |
+|:-------:|:-------------------:|:------------:|:--------------:|
+| Exploitation for Client Execution | | X | X |
+| System Services | X | | |
+| Abuse Elevation Control Mechanism   | X | X | X |
+| Valid Accounts | | X | |
 
 <div class="w-60 relative mt-6">
   <div class="relative w-40 h-40">
@@ -97,20 +122,6 @@ const final = {
   -moz-text-fill-color: transparent;
 }
 </style>
-
-
----
-
-# Matriz MITRE & ATT&CK
-<br>
-<br>
-
-| **Tipo de vulnerabilidad** | **Blue** | **Blunder** | **Devel** |
-|:-------:|-------------------|------------|--------------|
-| Exploitation for Client Execution | | X | X |
-| System Services | X | | |
-| Abuse Elevation Control Mechanism   | X | X | X |
-| Valid Accounts | | X | |
 
 ---
 
@@ -424,7 +435,6 @@ h3{
 | :---: | :---: | :---: | :---: |
 | ![imagen_1](https://d500.epimg.net/cincodias/imagenes/2019/08/26/lifestyle/1566818317_265854_1566818366_noticia_normal_recorte1.jpg) | ![imagen_2](https://i2.wp.com/comandoit.com/wp-content/uploads/2020/05/jhon.png?zoom=2&resize=405%2C400&ssl=1) | ![imagen_3](https://media.kasperskydaily.com/wp-content/uploads/sites/87/2014/04/05212201/hash.jpg)  | ![imagen_4](https://www.zdnet.com/a/hub/i/r/2016/08/24/df60f615-917f-4721-b061-6a034aad846c/resize/770xauto/168039de9712e1f518f2595d5c9f7607/hacker-keyboard.jpg) |
 
-
 ### Consecuencias
 
 1. Las credenciales LSA_SAM suponen un ingreso al sistema *sin la necesidad de tener una contraseña*.
@@ -440,11 +450,32 @@ img[alt=imagen_2] { width: 150px; height: 100px; border-radius: 5px 20px 5px; ma
 img[alt=imagen_3] { width: 150px; height: 100px; border-radius: 5px 20px 5px; margin: 2px; padding: 2px; display: inline;} 
 img[alt=imagen_4] { width: 150px; height: 100px; border-radius: 5px 20px 5px; margin: 2px; padding: 2px; display: inline;} 
 </style>
+<style>
+  h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 50%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+h3 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 50%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+</style>
 
 
 ---
 
 # Credenciales por registro LSA_SAM
+
 <div grid="~ cols-2 gap-4" >
 <div style="margin-top: 40px;">
 
@@ -463,6 +494,18 @@ img[alt=imagen_4] { width: 150px; height: 100px; border-radius: 5px 20px 5px; ma
 
 </div>
 </div>
+
+<style>
+  h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 50%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+</style>
 
 ---
 
@@ -499,6 +542,17 @@ img[alt=imagen_4] { width: 150px; height: 100px; border-radius: 5px 20px 5px; ma
 </div>
 </div>
 
+<style>
+  h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 50%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+</style>
 
 ---
 
@@ -520,13 +574,35 @@ img[alt=imagen_4] { width: 150px; height: 100px; border-radius: 5px 20px 5px; ma
 </div>
 </div>
 
-
+<style>
+  h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 50%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+</style>
 ---
 
 # Maquina Blue
 
 
 <div align="center"><img src="images/bluebanner.png"></div>
+
+<style>
+  h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 50%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+</style>
 
 ---
 
@@ -536,21 +612,41 @@ img[alt=imagen_4] { width: 150px; height: 100px; border-radius: 5px 20px 5px; ma
 <div style="margin-top: 40px;">
 
 ### Vulnerabilidades encontradas
+<br>
 
 - Vulnerabilidad de ejecución remota de código en Windows SMB  
-    
+
+<br>    
       
 ### Exploit usado
+<br>
 
 - MS17-010 EternalBlue SMB Remote Windows Kernel Pool Corruption 
-  
+
+<br>
+<div>
+  <img src="images/blue.png" style="margin-top: 12px;">
+</div>
 </div>
 <div>
+<br>
   <img src="images/nmap.png" style="margin-top: 3px;">
-  <img src="images/blue.png" style="margin-top: 12px;">
+  
 
 </div>
 </div>
+
+<style>
+  h3 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 50%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+</style>
 
 ---
 
@@ -605,6 +701,26 @@ Set-ItemProperty -Path
 </div>
 </div>
 
+<style>
+  h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 50%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+h3 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 50%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+</style>
 
 ---
 
@@ -617,6 +733,15 @@ img {
   height: 400px;
   width: 550px;
 }
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 50%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
 </style>
 
 ---
@@ -627,25 +752,43 @@ img {
 
 ### Vulnerabilidades encontradas
 
+<br>
+
 - Vulnerabilidad web que permitía el uso de fuerza bruta para autenticarse en el sistema.
 - Vulnerabilidad web que permitía la carga de archivos maliciosos.  
 - Vulnerabilidad que permite bypass en el sistema y obtener sesión como usuario privilegiado.
       
 ### CVE asociado
 
+<br>
+
 - CVE-2019-17240
 - CVE-2019-16113
 - CVE-2019-14287
 
 
-> https://github.com/noroh4xy/CVE-2019-16113 
-> https://www.exploit-db.com/exploits/47502
+[CVE-2019-16113](https://github.com/noroh4xy/CVE-2019-16113)
+
+
+
+[exploits/47502](https://www.exploit-db.com/exploits/47502)
+
+<br>
 
 <style>
 
  blockquote {
    margin-top: 90px;
  }
+h3 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 50%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
 
 </style>
 
@@ -653,12 +796,15 @@ img {
   
 </div>
 <div>
-  
+  <br>
+   
   ### Pruebas 
 
-  <img src="images/blunder_cve_01.PNG" style="margin-top: 10px;">
+
   <img src="images/blunder_cve_03.PNG" style="margin-top: 10px;">
+  <br>
   <img src="images/blunder_cve_02.PNG" style="margin-top: 10px;">
+  <br>
   <img src="images/blunder_cve_04.PNG" style="margin-top: 10px;">
 
 </div>
@@ -675,6 +821,15 @@ img {
   height: 400px;
   width: 550px;
 }
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 50%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
 </style>
 
 ---
@@ -685,14 +840,20 @@ img {
 
 ### Vulnerabilidades encontradas
 
+<br>
+
 - El servidor ftp compartía el directorio donde se ejecutaba el servicio web lo que permitía la carga de archivos maliciosos.
 - Vulnerabilidad a nivel de kernel que permitía el escalamiento de privilegios.
       
 ### CVE asociado
 
+<br>
+
 - CVE-2010-0232
 
-> https://www.exploit-db.com/exploits/11199
+<br>
+
+[https://www.exploit-db.com/exploits/11199](https://www.exploit-db.com/exploits/11199)
 
 </div>
 
@@ -716,7 +877,15 @@ img {
  blockquote {
    margin-top: 160px;
  }
-
+h3 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 50%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
 </style>
 
 
