@@ -77,6 +77,10 @@ The last comment block of each slide will be treated as slide notes. It will be 
 
 ![Luis](https://www.hackthebox.eu/badge/image/178451)
 
+### Salvador Quintana
+
+![Salvador](https://www.hackthebox.eu/badge/image/307154)
+
 </div>
 
 
