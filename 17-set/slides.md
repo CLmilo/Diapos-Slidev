@@ -31,14 +31,8 @@ Análisis encontrados por el grupo **CiberSecFIIS** a las máquinas de **HTB**
   </span>
 </div>
 
-<div class="abs-br m-6 flex gap-2">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" alt="GitHub"
-    class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon-logo-github />
-  </a>
+<div>
+<img width="150" height="100" src="images/CiberSecFIIS.png">
 </div>
 
 <!--
@@ -47,7 +41,7 @@ The last comment block of each slide will be treated as slide notes. It will be 
 
 ---
 
-#   Participantes
+#  Integrantes
 
 <div grid="~ cols-2 gap-4" >
 <div style="align-content:center;">
@@ -131,6 +125,35 @@ El alcance comprende las siguiente máquinas de la Plataforma HackTheBox
   -moz-text-fill-color: transparent;
 }
 
+</style>
+
+---
+
+# MS-PROJECT
+
+<div id=columnas>
+<img height = "300" src="images/project.jpg.jpg">
+
+
+<img width = "300" src="images/project2.jpg">
+</div>
+
+<style>
+  #columnas{
+   column-count:2;
+   column-gap:20px;
+  }
+</style>
+<style>
+  h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 50%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
 </style>
 
 ---
@@ -498,10 +521,10 @@ h3{
 
 ### Consecuencias
 
-1. Las credenciales LSA_SAM suponen un ingreso al sistema *sin la necesidad de tener una contraseña*.
-2. Las credenciales por medio de fuerza bruta dan a entender que las contraseñas usadas son  muy *comunes* y por ende previsible por terceros.
-3. Con hashes solo se encesitaría tiempo para descubrir sus *secretos*.
-4. El texto plano es el mayor riesgo y error que pueda tener un servidor, es una *puerta de libre ingreso* a una cuenta.
+1. Las credenciales LSA_SAM suponen un **riesgo** debido a que permiten el ingreso sin contraseña.
+2. Las credenciales obtenidas por fuerza bruta evidencian una ineficiencia en la política de contraseñas.
+3. Los hashes obtenidos se pueden convertir en texto plano con el suficiente tiempo de crackeo.
+4. Las contraseñas en texto plano son las que evidencian más riesgo.
 
 
 
@@ -712,7 +735,7 @@ h3 {
 ---
 
 
-# Hardening
+# Recomendaciones de Mitigación
 
 <style>
 h3 {
@@ -871,7 +894,7 @@ h3 {
 
 ---
 
-# Hardening
+# Recomendaciones de Mitigación
 
 ### Actualización del sudo
 Utiizando el comando
@@ -1023,7 +1046,7 @@ h3 {
 
 ---
 
-# Hardening
+# Recomendaciones de Mitigación
 
 <br>
 
